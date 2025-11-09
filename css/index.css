@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(-45deg, #222B59, #3E4C97, #1A1F3D, #4A3FBA);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navbar container */
+.navbar {
+    height: 4.5rem;
+    width: 100%;
+    background-color: #222B59;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+
+/* Logo / Brand name */
+.navdiv a {
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Menu items */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Menu links */
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00F5F2;
+    text-shadow: 0 0 20px #e65c00;
+}
+
+/* Contact button */
+.navbar input[type="button"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar input[type="button"]:hover {
+
+    color: #00F5F2;
+
+}
+
+
